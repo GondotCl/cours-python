@@ -68,6 +68,7 @@ Je te fais une petite recette de cuisine, essaye de la suivre pour obtenir à la
 3. Choisis une image de ton choix, note ses dimensions en pixels, et met une copie de l'image dans le même dossier que ton fichier Python.
 4. Pour charger une image, utilises la fonction ```image.load()```.
 5. Tu dois maintenant créer une fenêtre. Une fenêtre est un type d'objet de Pygame. Pour créer ton objet fenêtre, utilise la fonction ```display.set_mode()```, et donne lui les dimensions de ton image.
-6. Pour afficher ta fenêtre, utilises la *méthode* ```blit()```. Cette méthode prend en argument ton image et sa position dans la fenêtre. 
-7. C'est bon ta fenêtre s'affiche ! Mais pendant une fraction de seconde. Crée une boucle infinie pour que ta fenêtre ne se ferme jamais.
-8. Envoie moi une capture d'écran du résultat !
+6. Pour afficher l'image dans ta fenêtre, utilises la *méthode* ```blit()```. Cette méthode prend en argument ton image et sa position dans la fenêtre. 
+7. Il faut ensuite mettre à jour la fenêtre, avec la fonction de PyGame ```display.update()```.
+8. C'est bon ta fenêtre s'affiche ! Mais pendant une fraction de seconde. Crée une boucle infinie pour que ta fenêtre ne se ferme jamais.
+9. Envoie moi une capture d'écran du résultat !
