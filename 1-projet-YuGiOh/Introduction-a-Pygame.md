@@ -54,4 +54,20 @@ pip install <nom-de-la-librairie>
 2. Taper ```pip install pygame```
 
 ## 2. Premiers pas avec PyGame
-...
+
+### Liens utiles
+Quand tu utilises une librairie python, l'idéal c'est d'avoir sous la main sa documentation, que tu consultes dès que tu as besoin de détails sur une fonction, et des exemples de codes, pour apprendre comment l'utiliser.
+- Documentation : https://www.pygame.org/docs/
+- Tutoriels : https://www.pygame.org/wiki/tutorials
+
+### Ouvrir une fenêtre Pygame 
+Je te fais une petite recette de cuisine, essaye de la suivre pour obtenir à la fin une fenêtre avec une image en fonc d'écran ! Si jamais tu as des questions, essaye de trouver la réponse dans la documentation, et sinon envoie moi un message.
+
+1. Crée un nouveau fichier Python, et importe Pygame dedans.
+2. Pygame a besoin d'être initialisé une première fois pour être utilisé, avec la fonction ```init()```.
+3. Choisis une image de ton choix, note ses dimensions en pixels, et met une copie de l'image dans le même dossier que ton fichier Python.
+4. Pour charger une image, utilises la fonction ```image.load()```.
+5. Tu dois maintenant créer une fenêtre. Une fenêtre est un type d'objet de Pygame. Pour créer ton objet fenêtre, utilise la fonction ```display.set_mode()```, et donne lui les dimensions de ton image.
+6. Pour afficher ta fenêtre, utilises la *méthode* ```blit()```. Cette méthode prend en argument ton image et sa position dans la fenêtre. 
+7. C'est bon ta fenêtre s'affiche ! Mais pendant une fraction de seconde. Crée une boucle infinie pour que ta fenêtre ne se ferme jamais.
+8. Envoie moi une capture d'écran du résultat !
