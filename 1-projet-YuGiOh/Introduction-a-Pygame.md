@@ -60,7 +60,7 @@ Quand tu utilises une librairie python, l'idéal c'est d'avoir sous la main sa d
 - Documentation : https://www.pygame.org/docs/
 - Tutoriels : https://www.pygame.org/wiki/tutorials
 
-### Ouvrir une fenêtre Pygame 
+### Ouvrir une fenêtre Pygame et afficher une image 
 Je te fais une petite recette de cuisine, essaye de la suivre pour obtenir à la fin une fenêtre avec une image en fonc d'écran ! Si jamais tu as des questions, essaye de trouver la réponse dans la documentation, et sinon envoie moi un message.
 
 1. Crée un nouveau fichier Python, et importe Pygame dedans.
@@ -72,3 +72,30 @@ Je te fais une petite recette de cuisine, essaye de la suivre pour obtenir à la
 7. Il faut ensuite mettre à jour la fenêtre, avec la fonction de PyGame ```display.update()```.
 8. C'est bon ta fenêtre s'affiche ! Mais pendant une fraction de seconde. Crée une boucle infinie pour que ta fenêtre ne se ferme jamais.
 9. Envoie moi une capture d'écran du résultat !
+
+
+### Le concept d'événement
+Les événements rassemblent toutes les actions de l'utilisateur, qui peuvent être :
+- cliquer sur une touche du clavier
+- cliquer sur un des boutons de la souris
+- déplacer la souris
+- cliquer sur un élément de la fenêtre Pygame
+
+Ces exemples sont tous prédéfinis dans la librairie, mais il est aussi possible de créer de nouveaux types d'événements.
+
+Dès qu'un événement se produit, il est ajouté à la fin d'une liste appelée **la queue**.
+Cette liste a une taille maximale au-delà de laquelle les événements les plus anciens en sont effacés.
+
+Pour parcourir cette queue et accéder aux derniers événements, on peut, par exemple, appeler la fonction ```event.get()```.
+
+> Documentation relative aux événements : https://www.pygame.org/docs/ref/event.html
+> La liste complète des événements prédéfinis s'y trouve.
+
+### Fermer Pygame
+"Fermer Pygame" en traduction de programmation c'est prendre un événement (exemple cliquer sur le bouton X en haut à droite de la fenêtre) et lui associer l'action ```quit()``` et la fin de notre programme.
+
+Il faut donc parcourir les événements, pour chacun vérifier s'il correspond à l'événement prédéfini ```pygame.QUIT```.
+Si c'est le cas, il faut sortir appeler la fonction ```quit()``` et quitter la boucle infinie (dans n'importe quel ordre).
+
+## 3. Schémas récapitulatifs
+...
