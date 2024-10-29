@@ -33,6 +33,19 @@ Avec la fonction ```blit```, par exemple :
 screen.blit(police.render("Fin du jeu !", True, (200, 25, 25)), (600, 200))
 ```
 
+## Changer la transparence d'une image
+Une nouvelle fonction rend l'opération très simple : 
+
+```python
+# Valeur en 0 (transparent) et 255 (opaque)
+Surface.set_aplha(value)
+
+# Désactiver la transparence (= mettre 255)
+Surface.set_alpha(None)
+```
+
+> Attention : pas sûre de la réaction avec une image dans un autre format que PNG.
+
 ## Autres fonctions
 ### display.set_mode(pos, flags)
 Valeurs possibles pour flags : 
@@ -42,13 +55,12 @@ Valeurs possibles pour flags :
 Recommendation : SCALED | RESIZABLE
 
 
-## transform.scale
+### transform.scale
 pour changer la taille de l'image dans pygame plutôt que à la main au préalable
 existe 
 
 
 ## To-Do
-- changer transparence image (boutons couleur du joueur 1)
 - clic bouton = changer transparence image...
 
 - comment afficher rectangles barres de vie
